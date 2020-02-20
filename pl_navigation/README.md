@@ -41,9 +41,6 @@ The task is episodic, and in order to solve the environment, the agent must get 
 
 (1) Install the required libraries from requirements.txt </br>
 
-(2) Run the `Navigation.ipynb` contains the code to set up the environment and the outer episode iteration to solve the reinforcement problem. Our solution uses a (double) deep Q-learning network (only standard feedforward layers) and experience replay. </br>
+(2) Download the Banana environment exe files and map the directory in the notebook.
 
-The agent, the deep Q-Network and memory buffer are implemented in the file `dqn_agent.py`. The Agent class takes an optional parameter to choose between a standard Q-Network or a Double-Q-Network (see also [this paper](https://arxiv.org/abs/1509.06461)). 
-
-The most relevant functions are `_init_` and `forward` in the `QNetwork` class, where the architecture of the deep network are defined.
-
+(3) Run the `Navigation.ipynb` contains the code to set up the environment and the outer episode iteration to solve the reinforcement problem. Our solution uses a (double) deep Q-learning network (only standard feedforward layers) and experience replay. </br>  The agent, the deep Q-Network and memory buffer are implemented in the file `dqn_agent.py`. The Agent class takes an optional parameter to choose between a standard Q-Network or a Double-Q-Network (see also [this paper](https://arxiv.org/abs/1509.06461)).   
