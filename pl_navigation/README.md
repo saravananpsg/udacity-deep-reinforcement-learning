@@ -2,7 +2,7 @@
 
 [image1]: https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif "Trained Agent"
 
-# "Project (1) Navigation" 
+# "Project Navigation" 
 For this project, we train an agent to navigate and collect bananas! in a large, square environment. The setup instruction for this exercise can be found [here](https://github.com/udacity/deep-reinforcement-learning/tree/master/p1_navigation)
 
 ![Trained Agent][image1]
@@ -39,8 +39,11 @@ The task is episodic, and in order to solve the environment, the agent must get 
 
 ### Step-By-Step Instruction and Description of the Project
 
-(1) Install the required libraries from requirements.txt
-(2) Run the `Navigation.ipynb` contains the code to set up the environment and the outer episode iteration to solve the reinforcement problem. Our solution uses a (double) deep Q-learning network (only standard feedforward layers) and experience replay.
+(1) Install the required libraries from requirements.txt </br>
 
-The agent, the deep Q-Network and memory buffer are implemented in the file `dqn_agent.py`. The Agent class takes an optional parameter to choose between a standard Q-Network or a Double-Q-Network (see also [this paper](https://arxiv.org/abs/1509.06461)). The most relevant functions are `_init_` and `forward` in the `QNetwork` class, where the architecture of the deep network are defined.
+(2) Run the `Navigation.ipynb` contains the code to set up the environment and the outer episode iteration to solve the reinforcement problem. Our solution uses a (double) deep Q-learning network (only standard feedforward layers) and experience replay. </br>
+
+The agent, the deep Q-Network and memory buffer are implemented in the file `dqn_agent.py`. The Agent class takes an optional parameter to choose between a standard Q-Network or a Double-Q-Network (see also [this paper](https://arxiv.org/abs/1509.06461)). 
+
+The most relevant functions are `_init_` and `forward` in the `QNetwork` class, where the architecture of the deep network are defined.
 
