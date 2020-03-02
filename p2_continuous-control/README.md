@@ -1,7 +1,12 @@
 # P2 Continuous Control
 ![Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/images/reacher.png)
 
-Reacher Environment
+# Reacher Environment 
+This project uses [Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) environment. In this environment, a double-jointed arm can move to target locations. A reward of +0.1 is provided for each step so that the agent's hand is in the goal location. Thus, the goal of your agent is to maintain its position at the target location for as many time steps as possible.
+
+The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector should be a number between -1 and 1.
+
+## Environment details:
    - Set-up: Double-jointed arm which can move to target locations.
    - Goal: The agents must move its hand to the goal location, and keep it there.
    - Agents: The environment contains 20 agent with same Behavior Parameters.
@@ -19,13 +24,7 @@ Reacher Environment
             Recommended Minimum: 0.2
             Recommended Maximum: 4
         - Benchmark Mean Reward: 30
-        
-
-
-## Project Details
-This project uses [Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) environment. In this environment, a double-jointed arm can move to target locations. A reward of +0.1 is provided for each step so that the agent's hand is in the goal location. Thus, the goal of your agent is to maintain its position at the target location for as many time steps as possible.
-
-The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector should be a number between -1 and 1.
+     
 
 ## Getting Started
 To get started, it is recommended to follow the Udacity DRL ND dependencies [instructions here](https://github.com/udacity/deep-reinforcement-learning#dependencies) and install the dependencies. This project utilises [Unity ML-Agents](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation.md), [NumPy](http://www.numpy.org/) and [PyTorch](https://pytorch.org/) extensively.  A prebuilt simulator is required in be installed. You need only select the environment that matches your operating system:
