@@ -39,6 +39,9 @@ Specifically, after each episode, we add up the rewards that each agent received
 - This yields an **average score** for each episode (where the average is over all 20 agents).
 
 The environment is considered solved, when the average (over 100 episodes) of those average scores is at least +30. 
+ 
+The provided solution is for second version, solving the 20 agent for an average score of +30 over consecutive episodes and overall agents.
+
      
 ### Getting Started
 1. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
