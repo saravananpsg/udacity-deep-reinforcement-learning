@@ -65,7 +65,7 @@ The environment is considered solved, when the average (over 100 episodes) of th
 ## Instructions
 (1) Run the requirements.txt for relevant libraries</b>
 (2) Download and set the path for the environment Reacher environment.</b>
-(3) Run the `DDPG_Continuous_Control.ipynb` notebook to train the DDPG agent.</b>
+(3) Run the `Continuous_Control.ipynb` notebook to train the DDPG agent.</b>
 (4) Once the model is trained, weights will be saved in the same directory in the files 
        - `actor.pth` 
        - `critic.pth` </b>
