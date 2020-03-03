@@ -1,15 +1,13 @@
-[//]: # (Image References)
-
-[image1]: models/trained_agent.gif  "Trained Agent"
-
-
-
 # Project 3: Collaboration and Competition
 
 ### Introduction
 
 For this project, you will work with the [Tennis](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#tennis) environment.
 
+[//]: # (Image References)
+[image1]: models/trained_agent.gif  "Trained Agent"
+[image2]: models/training.png "Train"
+[image3]: models/test.png
 ![Trained Agent][image1]
 
 In this environment, two agents control rackets to bounce a ball over a net. If an agent hits the ball over the net, it receives a reward of +0.1.  If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01.  Thus, the goal of each agent is to keep the ball in play.
@@ -37,6 +35,65 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 2. Place the file in the DRLND GitHub repository, in the `p3_collab-compet/` folder, and unzip (or decompress) the file. 
 
-### Instructions
+### Prerequisites
 
-Follow the instructions in `Tennis.ipynb` to get started with training your own agent! 
+1. Model was trained in python(3.6.5) and pytorch.
+2. Install the required libraries mentioned in the requirements.txt
+
+```
+pip install -r requirements.txt
+
+```
+
+### Installation
+
+(1) Run the requirements.txt for relevant libraries</br>
+(2) Download and set the path for the environment Tennis environment</br>
+(3) Run the `Tennis.ipynb` notebook to train the DDPG agent</br>
+(4) Once the model is trained, weights will be saved in the /model directory in the files 
+       - `best_actor.pth` 
+       - `best_critic.pth` </br>
+ (5) The model weights can be used to load the agent and test the agent for Tennis Environment. 
+
+### Training Results
+The agent was able to solve the environment by achieving score average score of +0.5 (over 100consecutive episodes, after taking the maximum over both agents)
+![Trained Agent][image2]
+
+## Testing the agent
+
+1. Load the weights from the trained model repository under /model/best_actor_x.pth (x=0,1)
+2. Run the test function to test the trained agent for the reward scores
+
+
+### steps:
+
+(1) Load actor weights:
+
+```
+agent_0.actor_local.load_state_dict(torch.load('models/best_actor_0.pth'))
+
+```
+(2) Run the test function:
+
+```
+scores, avgs = test()
+
+```
+
+Test Results:
+
+```
+Episodes 0001	Max Reward: 5.200	Moving Average: 5.200
+Episodes 0002	Max Reward: 0.100	Moving Average: 2.650
+Episodes 0003	Max Reward: 5.200	Moving Average: 3.500
+Episodes 0004	Max Reward: 5.300	Moving Average: 3.950
+Episodes 0005	Max Reward: 0.100	Moving Average: 3.180
+Episodes 0006	Max Reward: 0.300	Moving Average: 2.700
+Episodes 0007	Max Reward: 5.200	Moving Average: 3.057
+Episodes 0008	Max Reward: 0.100	Moving Average: 2.688
+Episodes 0009	Max Reward: 5.200	Moving Average: 2.967
+Episodes 0010	Max Reward: 5.300	Moving Average: 3.200
+
+```
+
+
