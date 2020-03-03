@@ -56,24 +56,20 @@ pip install -r requirements.txt
  (5) The model weights can be used to load the agent and test the agent for Tennis Environment. 
 
 ### Training Results
+
 The agent was able to solve the environment by achieving score average score of +0.5 (over 100consecutive episodes, after taking the maximum over both agents)
+
 ![Trained Agent][image2]
 
 ## Testing the agent
 
 1. Load the weights from the trained model repository under /model/best_actor_x.pth (x=0,1)
-2. Run the test function to test the trained agent for the reward scores
-
-
-### steps:
-
-(1) Load actor weights:
 
 ```
 agent_0.actor_local.load_state_dict(torch.load('models/best_actor_0.pth'))
 
 ```
-(2) Run the test function:
+2. Run the test function to test the trained agent for the reward scores
 
 ```
 scores, avgs = test()
